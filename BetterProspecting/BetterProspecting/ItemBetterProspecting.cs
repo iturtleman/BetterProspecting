@@ -111,11 +111,12 @@ namespace BetterProspecting
             }
             else
             {
+                damage = 1;
                 ProbeBlockDensityMode(world, byEntity, itemslot, blockSel);
             }
 
             /// only do extra damage if not using the game's built in <see cref="ItemProspectingPick.ProbeBlockDensityMode"/>
-            if (toolMode != 0 && DamagedBy != null && DamagedBy.Contains(EnumItemDamageSource.BlockBreaking))
+            if (DamagedBy != null && DamagedBy.Contains(EnumItemDamageSource.BlockBreaking))
             {
                 DamageItem(world, byEntity, itemslot, damage);
             }
