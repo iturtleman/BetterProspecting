@@ -11,7 +11,7 @@
     "Gnomp"
   ],
   "description": "A less tedious form of prospecting.",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "dependencies": {
     "game": "*"
   }
